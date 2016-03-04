@@ -30,7 +30,7 @@ app.use(middleware.logger);
 
 // below middleware.requireAuthentication is added to this particular route , and  will call string private route hit
 app.get('/about' ,middleware.requireAuthentication, function (req, res) {
- 	res.send('about us')
+ 	res.send('about us !')
  });
 
 app.use(express.static(__dirname + '/public'));
